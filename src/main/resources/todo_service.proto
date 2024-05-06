@@ -1,0 +1,47 @@
+syntax = "proto3";
+
+package todo;
+
+option java_multiple_files = true;
+option java_package = "com.poc.todolist";
+option java_outer_classname = "TodoProto";
+
+// The Todo service definition.
+service TodoService {
+  // Retrieve all todos
+  rpc GetAllTodos (Empty) returns (TodoList) {}
+
+  // Retrieve a single todo by ID
+  rpc GetTodo (TodoRequest) returns (Todo) {}
+
+  // Create a new todo
+  rpc CreateTodo (Todo) returns (TodoResponse) {}
+
+  // Update an existing todo
+  rpc UpdateTodo (Todo) returns (TodoResponse) {}
+
+  // Delete a todo
+  rpc DeleteTodo (TodoRequest) returns (TodoResponse) {}
+}
+
+// Request types and other messages
+message Empty {}
+
+message TodoRequest {
+  int64 id = 1;
+}
+
+message Todo {
+  int64 id = 1;
+  string description = 2;
+  bool isCompleted = 3;
+}
+
+message TodoList {
+  repeated Todo todos = 1;
+}
+
+message TodoResponse {
+  int64 id = 1;
+  string status = 2;
+}

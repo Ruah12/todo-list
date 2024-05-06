@@ -1,0 +1,63 @@
+########################################################################################################################
+# dev (development) profile for todo-list String Boot 3 app
+########################################################################################################################
+server:
+  port: 8081                  # Application server port
+########################################################################################################################
+# Custom app Properties
+########################################################################################################################
+app:
+  config:
+    path: config/ # path to config folder
+
+########################################################################################################################
+# Spring related properties
+########################################################################################################################
+spring:
+  application.name: TodoList
+  main.banner-mode: off
+
+  mvc:
+# This property controls the behavior of your application when a request is made to a URL
+#  that does not map to any known handler. By default, Spring MVC sends a 404 response when
+#  no handler is found for a request.
+# give you more control over your application's behavior and security, tailoring its functionality to
+#  meet specific operational or architectural requirements.
+    throw-exception-if-no-handler-found: true
+# This property dictates whether Spring Boot automatically adds mappings for serving static
+# resources such as images, JavaScript, CSS, etc., from standard locations like /static,
+# /public, etc.
+# Effect of Setting to false: By disabling this setting, you prevent Spring Boot from automatically
+# registering the default resource handler that serves static resources. This is useful if you
+# want to handle resource mapping yourself through custom configurations or if your application
+# doesn't serve static resources directly (for instance, when these resources are handled
+#  by a dedicated content delivery network (CDN) or a front-end server).
+# Use Case: Disabling automatic resource mappings can be important for security, performance
+#  optimization, or when using alternative methods to serve resources. It helps ensure that only
+#  the intended resources are accessible and avoids unnecessary exposure of directory contents.
+    web.resources.add-mappings: false
+########################################################################################################################
+# Spring DB related properties
+########################################################################################################################
+  # Exclude unnecessary auto-configuration to prevent error:
+  # Cannot determine a dialect for org.springframework.jdbc.core.JdbcTemplate
+  autoconfigure.exclude: org.springframework.boot.autoconfigure.data.jdbc.JdbcRepositoriesAutoConfiguration
+  jpa.hibernate.ddl-auto: none  # Disable Hibernate's DDL auto-generation
+  # Configure Spring Boot to automatically run schema.sql IN TIME OF application startup.
+  # Production only
+  #sql.init.mode: embedded
+  sql.init.mode: always
+  datasource:
+    url: jdbc:sqlite:config/todos-dev.db
+    driver-class-name: org.sqlite.JDBC
+    database-platform: org.hibernate.dialect.SQLiteDialect
+    schema: classpath:schema.sql
+    initialization-mode: always
+
+########################################################################################################################
+# spring-boot-starter-actuator related properties: /actuator/health
+########################################################################################################################
+management:
+  endpoints.enabled-by-default: true # have to be false for production
+  endpoint.health.enabled: true
+  endpoint.info.enabled: true

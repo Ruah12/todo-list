@@ -1,0 +1,104 @@
+24-04-18 21:24:18.877 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+24-04-18 21:24:18.934 INFO  [main] c.p.t.TodoListControllerIntegrationTest - Starting TodoListControllerIntegrationTest using Java 17.0.9 with PID 10200 (started by Rohan in D:\Dev\Exams\SpringBoot\todo-list)
+24-04-18 21:24:18.935 DEBUG [main] c.p.t.TodoListControllerIntegrationTest - Running with Spring Boot v3.2.4, Spring v6.1.5
+24-04-18 21:24:18.935 INFO  [main] c.p.t.TodoListControllerIntegrationTest - The following 1 profile is active: "test"
+24-04-18 21:24:20.397 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 0 (http)
+24-04-18 21:24:20.406 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-auto-1"]
+24-04-18 21:24:20.409 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+24-04-18 21:24:20.409 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+24-04-18 21:24:20.507 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+24-04-18 21:24:20.508 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1555 ms
+24-04-18 21:24:20.777 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+24-04-18 21:24:20.927 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@6d0114c0
+24-04-18 21:24:20.930 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+24-04-18 21:24:21.827 INFO  [main] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-04-18 21:24:21.898 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-auto-1"]
+24-04-18 21:24:21.911 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 64414 (http) with context path ''
+24-04-18 21:24:21.925 INFO  [main] c.p.t.TodoListControllerIntegrationTest - Started TodoListControllerIntegrationTest in 3.43 seconds (process running for 4.374)
+24-04-18 21:24:23.677 DEBUG [main] c.p.t.TodoListControllerIntegrationTest - url: http://localhost:64414/todos/2, req: {"description": "Update the report", "isCompleted": true}
+24-04-18 21:24:23.804 INFO  [http-nio-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+24-04-18 21:24:23.805 INFO  [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+24-04-18 21:24:23.805 INFO  [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+24-04-18 21:24:23.893 DEBUG [http-nio-auto-1-exec-1] c.p.t.c.TodoListRestController - Updated todo record for  id=2.
+24-04-18 21:24:24.024 DEBUG [http-nio-auto-1-exec-2] c.p.t.c.TodoListRestController - Found todo record for id=1.
+24-04-18 21:24:24.032 DEBUG [http-nio-auto-1-exec-3] c.p.t.c.TodoListRestController - Found todo record for id=3.
+24-04-18 21:24:24.044 DEBUG [http-nio-auto-1-exec-4] c.p.t.c.TodoListRestController - Added todo record for  id=6.
+24-04-18 21:24:24.049 DEBUG [main] c.p.t.TodoListControllerIntegrationTest - Delete url: http://localhost:64414/todos/4.
+24-04-18 21:24:24.051 DEBUG [http-nio-auto-1-exec-5] c.p.t.c.TodoListRestController - Deleted todo record for  id=4.
+24-04-18 21:24:24.059 DEBUG [http-nio-auto-1-exec-6] c.p.t.c.TodoListRestController - Found 5 todo records
+24-04-18 21:24:24.096 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+24-04-18 21:24:24.098 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+24-04-18 21:26:39.220 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+24-04-18 21:26:39.258 INFO  [main] c.p.t.TodoListApplicationTests - Starting TodoListApplicationTests using Java 17.0.9 with PID 47860 (started by Rohan in D:\Dev\Exams\SpringBoot\todo-list)
+24-04-18 21:26:39.259 DEBUG [main] c.p.t.TodoListApplicationTests - Running with Spring Boot v3.2.4, Spring v6.1.5
+24-04-18 21:26:39.259 INFO  [main] c.p.t.TodoListApplicationTests - The following 1 profile is active: "test"
+24-04-18 21:26:40.499 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+24-04-18 21:26:40.691 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@4cc12db2
+24-04-18 21:26:40.697 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+24-04-18 21:26:41.965 INFO  [main] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-04-18 21:26:42.057 INFO  [main] c.p.t.TodoListApplicationTests - Started TodoListApplicationTests in 3.207 seconds (process running for 4.097)
+24-04-18 21:26:42.830 INFO  [main] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.poc.todolist.TodoListControllerIntegrationTest]: TodoListControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+24-04-18 21:26:42.832 INFO  [main] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.poc.todolist.TodoListApplication for test class com.poc.todolist.TodoListControllerIntegrationTest
+24-04-18 21:26:42.876 INFO  [main] c.p.t.TodoListControllerIntegrationTest - Starting TodoListControllerIntegrationTest using Java 17.0.9 with PID 47860 (started by Rohan in D:\Dev\Exams\SpringBoot\todo-list)
+24-04-18 21:26:42.877 DEBUG [main] c.p.t.TodoListControllerIntegrationTest - Running with Spring Boot v3.2.4, Spring v6.1.5
+24-04-18 21:26:42.877 INFO  [main] c.p.t.TodoListControllerIntegrationTest - The following 1 profile is active: "test"
+24-04-18 21:26:43.327 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 0 (http)
+24-04-18 21:26:43.336 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-auto-1"]
+24-04-18 21:26:43.338 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+24-04-18 21:26:43.338 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+24-04-18 21:26:43.423 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+24-04-18 21:26:43.424 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 544 ms
+24-04-18 21:26:43.503 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+24-04-18 21:26:43.504 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection org.sqlite.jdbc4.JDBC4Connection@68cc6319
+24-04-18 21:26:43.504 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+24-04-18 21:26:43.645 INFO  [main] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-04-18 21:26:43.678 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-auto-1"]
+24-04-18 21:26:43.698 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 64741 (http) with context path ''
+24-04-18 21:26:43.707 INFO  [main] c.p.t.TodoListControllerIntegrationTest - Started TodoListControllerIntegrationTest in 0.872 seconds (process running for 5.747)
+24-04-18 21:26:43.762 DEBUG [main] c.p.t.TodoListControllerIntegrationTest - url: http://localhost:64741/todos/2, req: {"description": "Update the report", "isCompleted": true}
+24-04-18 21:26:43.914 INFO  [http-nio-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+24-04-18 21:26:43.914 INFO  [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+24-04-18 21:26:43.915 INFO  [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+24-04-18 21:26:44.002 DEBUG [http-nio-auto-1-exec-1] c.p.t.c.TodoListRestController - Updated todo record for  id=2.
+24-04-18 21:26:44.131 DEBUG [http-nio-auto-1-exec-2] c.p.t.c.TodoListRestController - Found todo record for id=1.
+24-04-18 21:26:44.142 DEBUG [http-nio-auto-1-exec-3] c.p.t.c.TodoListRestController - Found todo record for id=3.
+24-04-18 21:26:44.158 DEBUG [http-nio-auto-1-exec-4] c.p.t.c.TodoListRestController - Added todo record for  id=6.
+24-04-18 21:26:44.165 DEBUG [main] c.p.t.TodoListControllerIntegrationTest - Delete url: http://localhost:64741/todos/4.
+24-04-18 21:26:44.168 DEBUG [http-nio-auto-1-exec-5] c.p.t.c.TodoListRestController - Deleted todo record for  id=4.
+24-04-18 21:26:44.176 DEBUG [http-nio-auto-1-exec-6] c.p.t.c.TodoListRestController - Found 5 todo records
+24-04-18 21:26:44.523 DEBUG [main] c.p.t.c.TodoListRestController - Found todo record for id=1.
+24-04-18 21:26:44.531 DEBUG [main] c.p.t.c.TodoListRestController - Not found todo record for id=1.
+24-04-18 21:26:44.568 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+24-04-18 21:26:44.573 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+24-04-18 21:26:44.600 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+24-04-18 21:26:44.602 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+24-04-18 21:37:48.927 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+24-04-18 21:37:48.986 INFO  [main] c.p.t.TodoListControllerIntegrationTest - Starting TodoListControllerIntegrationTest using Java 17.0.9 with PID 14740 (started by Rohan in D:\Dev\Exams\SpringBoot\todo-list)
+24-04-18 21:37:48.986 DEBUG [main] c.p.t.TodoListControllerIntegrationTest - Running with Spring Boot v3.2.4, Spring v6.1.5
+24-04-18 21:37:48.987 INFO  [main] c.p.t.TodoListControllerIntegrationTest - The following 1 profile is active: "test"
+24-04-18 21:37:50.404 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 0 (http)
+24-04-18 21:37:50.412 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-auto-1"]
+24-04-18 21:37:50.415 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+24-04-18 21:37:50.415 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+24-04-18 21:37:50.518 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+24-04-18 21:37:50.518 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1511 ms
+24-04-18 21:37:50.816 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+24-04-18 21:37:50.974 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@3b39e79b
+24-04-18 21:37:50.976 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+24-04-18 21:37:51.980 INFO  [main] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-04-18 21:37:52.087 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-auto-1"]
+24-04-18 21:37:52.102 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 65050 (http) with context path ''
+24-04-18 21:37:52.117 INFO  [main] c.p.t.TodoListControllerIntegrationTest - Started TodoListControllerIntegrationTest in 3.556 seconds (process running for 4.423)
+24-04-18 21:37:52.961 DEBUG [main] c.p.t.TodoListControllerIntegrationTest - url: http://localhost:65050/todos/2, req: {"description": "Update the report", "isCompleted": true}
+24-04-18 21:37:53.099 INFO  [http-nio-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+24-04-18 21:37:53.100 INFO  [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+24-04-18 21:37:53.100 INFO  [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+24-04-18 21:37:53.205 DEBUG [http-nio-auto-1-exec-1] c.p.t.c.TodoListRestController - Updated todo record for  id=2.
+24-04-18 21:37:53.350 DEBUG [http-nio-auto-1-exec-2] c.p.t.c.TodoListRestController - Found todo record for id=1.
+24-04-18 21:37:53.358 DEBUG [http-nio-auto-1-exec-3] c.p.t.c.TodoListRestController - Found todo record for id=3.
+24-04-18 21:37:53.370 DEBUG [http-nio-auto-1-exec-4] c.p.t.c.TodoListRestController - Added todo record for  id=6.
+24-04-18 21:37:53.376 DEBUG [main] c.p.t.TodoListControllerIntegrationTest - Delete url: http://localhost:65050/todos/4.
+24-04-18 21:37:53.379 DEBUG [http-nio-auto-1-exec-5] c.p.t.c.TodoListRestController - Deleted todo record for  id=4.
+24-04-18 21:37:53.386 DEBUG [http-nio-auto-1-exec-6] c.p.t.c.TodoListRestController - Found 5 todo records
+24-04-18 21:37:53.432 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+24-04-18 21:37:53.434 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

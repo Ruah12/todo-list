@@ -1,0 +1,47 @@
+########################################################################################################################
+# uat profile for todo-list String Boot 3 app
+########################################################################################################################
+server:
+  port: 8081                  # Application server port
+########################################################################################################################
+# Custom Ion2KafkaPubApp Properties
+########################################################################################################################
+app:
+  config:
+    path: config/ # path to config folder
+
+########################################################################################################################
+# Spring related properties
+########################################################################################################################
+spring:
+  application.name: TodoList
+  main.banner-mode: off
+
+  mvc:
+    throw-exception-if-no-handler-found: true
+    web.resources.add-mappings: false
+########################################################################################################################
+# Spring DB related properties
+########################################################################################################################
+  # Exclude unnecessary auto-configuration to prevent error:
+  # Cannot determine a dialect for org.springframework.jdbc.core.JdbcTemplate
+  autoconfigure.exclude: org.springframework.boot.autoconfigure.data.jdbc.JdbcRepositoriesAutoConfiguration
+  jpa.hibernate.ddl-auto: none  # Disable Hibernate's DDL auto-generation
+  # Configure Spring Boot to automatically run schema.sql IN TIME OF application startup.
+  # Production only
+  #sql.init.mode: embedded
+  sql.init.mode: always
+  datasource:
+    url: jdbc:sqlite:config/todos-uat.db
+    driver-class-name: org.sqlite.JDBC
+    database-platform: org.hibernate.dialect.SQLiteDialect
+    schema: classpath:schema.sql
+    initialization-mode: always
+
+########################################################################################################################
+# spring-boot-starter-actuator related properties: /actuator/health
+########################################################################################################################
+management:
+  endpoints.enabled-by-default: true # have to be false for production
+  endpoint.health.enabled: true
+  endpoint.info.enabled: true
